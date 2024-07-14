@@ -131,7 +131,13 @@ main section{
 
 /* skile style */
 .skile-content{
-    margin: 0px 180px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    /* border: 2px solid teal; */
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
 }
 .skile-title{
     font-size: 32px;
@@ -233,56 +239,39 @@ textarea{
     color: #474747;
 }
 
+/* responsive media query */
 
-
-
-
-
-
-
-
-
-
-/* .footer-title{
-    font-size: 35px;
-    font-weight: bold;
-    margin-bottom: 20px;
-}
-.footer-description{
-    font-size: 16;
-    font-weight: 400;
-    color: #474747;
-    margin-bottom: 20px;
-}
-.icon > a{
-    margin-right: 10px;
+.hide{
+    display: none;
 }
 
- footer{
-    padding: 130px 230px;
-    display: flex;
-    gap: 100px;
-}
-
-.footer-colm{
-    width: 50%;
-}
-
-footer input[type="text"], footer input[type="email"], footer textarea{
-    height: 64px;
-    border-radius: 5px;
-    background-color: white;
-    display: block;
-    width: 100%;
+@media screen and (max-width: 576px) {
+    .skile-container{
+        margin: 20px;
+        flex-direction: column;
+    }
+    .resume-container{
+        flex-direction: column;
+        gap: 20px;
+        padding: 10px;
+    }
+    .footer{
+        padding: 20px;
+        flex-direction: column;
+    }
+    .contact input[type="text"], input[type="email"],  
+textarea{
+    width: calc(100% - 40px);
     padding: 10px 20px;
-    margin-bottom: 24px;
-    border: none;
+}
+  .about{
+   padding: 20px;
+}
+.about-items{
+    flex-direction: column;
+}
 }
 
-#meassge{
-    width: 461px;
-    height: 180px;
-    font-size: 16px;
-    font-weight: 400;
-    color: #474747;
-} */
+
+
+
