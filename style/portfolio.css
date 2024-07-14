@@ -270,7 +270,16 @@ textarea{
 .about-items{
     flex-direction: column;
 }
+.banner{
+    flex-direction: column;
+    margin: 20px;
 }
+nav, ul{flex-direction: column;}
+
+ nav > ul{
+    gap: 20px;
+ }
+}   
 
 
 
